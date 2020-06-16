@@ -185,6 +185,7 @@ def player_numbers(team)
   count = 0
   game_hash.each do |location,team_data|
     team_data.each do |attribute, data|
+      if attribute
       binding.pry
       if attribute == :players && data[:team_name] == team
         while count < 6 do 
