@@ -203,7 +203,22 @@ def player_numbers(team)
   result_array
 end
 
-def player_stats
+def player_stats(name)
+  game = game_hash
+count = 0
+while count < 6 do
+  #binding.pry
+  if game[:home][:players][count][:player_name] == name
+    result = game[:home][:players][count] 
+    return result
+  end
+  if game[:away][:players][count][:player_name] == name
+    #binding.pry
+    result = game[:away][:players][count]
+    return result
+  end
+  count +=1
+end
   
 end
 
