@@ -191,6 +191,7 @@ def player_numbers(team)
           count += 1
         #binding.pry
       end
+      binding.pry
       end
     end
   end
