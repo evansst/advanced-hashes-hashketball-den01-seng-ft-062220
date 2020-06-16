@@ -187,7 +187,7 @@ def player_numbers(team)
     #binding.pry
     if team_data[:team_name] == team
       team_data.each do |attribute, data|
-       binding.pry
+       #binding.pry
         if attribute == :players
          while count < 6 do 
             result_array << team_data[:players][count][:number]
