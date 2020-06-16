@@ -225,15 +225,16 @@ end
 def big_shoe_rebounds
   game = game_hash
 count = 0
+max_size = 0
 while count < 6 do
   #binding.pry
   if game[:home][:players][count][:shoe] == name
-    result = game[:home][:players][count][:points] 
+    result = game[:home][:players][count][:rebounds] 
     return result
   end
   if game[:away][:players][count][:shoe] == name
     #binding.pry
-    result = game[:away][:players][count][:points]
+    result = game[:away][:players][count][:rebounds]
     return result
   end
   count +=1
