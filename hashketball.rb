@@ -223,5 +223,19 @@ end
 end
 
 def big_shoe_rebounds
-  
+  game = game_hash
+count = 0
+while count < 6 do
+  #binding.pry
+  if game[:home][:players][count][:shoe] == name
+    result = game[:home][:players][count][:points] 
+    return result
+  end
+  if game[:away][:players][count][:shoe] == name
+    #binding.pry
+    result = game[:away][:players][count][:points]
+    return result
+  end
+  count +=1
+end
 end
