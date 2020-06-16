@@ -198,6 +198,7 @@ def player_numbers(team)
        end
       end
    end
+ end
   binding.pry
   result_array
 end
