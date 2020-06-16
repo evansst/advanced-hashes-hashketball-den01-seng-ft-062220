@@ -242,5 +242,6 @@ while count < 6 do
   count +=1
   binding.pry
 end
+binding.pry
 result
 end
