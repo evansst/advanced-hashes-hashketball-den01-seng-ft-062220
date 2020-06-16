@@ -227,7 +227,7 @@ def big_shoe_rebounds
 count = 0
 max_size = 0
 result = 0
-while count < 6 do
+while count < 5 do
   #binding.pry
   if game[:home][:players][count][:shoe] > max_size
     max_size = game[:home][:players][count][:shoe]
