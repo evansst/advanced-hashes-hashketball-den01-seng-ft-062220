@@ -240,6 +240,7 @@ while count < 6 do
     result = game[:away][:players][count][:rebounds]
   end
   count +=1
+  binding.pry
 end
 result
 end
