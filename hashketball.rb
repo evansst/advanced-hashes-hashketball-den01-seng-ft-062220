@@ -185,18 +185,20 @@ def player_numbers(team)
   count = 0
   game_hash.each do |location,team_data|
     binding.pry
-    team_data.each do |attribute, data|
-      binding.pry
-      if attribute == :players
-        while count < 6 do 
-          result_array << team_data[:players][count][:number]
-          count += 1
-        binding.pry
-        end
-      binding.pry
+    if team_data[:team_name] == team
+      team_data.each do |attribute, data|
+       binding.pry
+        if attribute == :players
+         while count < 6 do 
+            result_array << team_data[:players][count][:number]
+            count += 1
+          binding.pry
+         end
+       binding.pry
+       end
       end
-    end
-  end
+   end
+ end
   binding.pry
   result_array
 end
