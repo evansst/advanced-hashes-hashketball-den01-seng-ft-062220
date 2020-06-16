@@ -228,15 +228,15 @@ count = 0
 max_size = 0
 while count < 6 do
   #binding.pry
-  if game[:home][:players][count][:shoe] == name
+  if game[:home][:players][count][:shoe] > max_size
+    max_size = game[:home][:players][count][:shoe]
     result = game[:home][:players][count][:rebounds] 
-    return result
   end
-  if game[:away][:players][count][:shoe] == name
-    #binding.pry
+  if game[:away][:players][count][:shoe] > max_size
+    max_size = game[:away][:players][count][:shoe]
     result = game[:away][:players][count][:rebounds]
-    return result
   end
   count +=1
 end
+result
 end
