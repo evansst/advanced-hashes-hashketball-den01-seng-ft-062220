@@ -189,11 +189,12 @@ def player_numbers(team)
         while count < 6 do 
           result_array << team_data[:players][count][:number]
           count += 1
-        binding.pry
+        #binding.pry
       end
       end
     end
   end
+  binding.pry
   result_array
 end
 
