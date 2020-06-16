@@ -232,6 +232,7 @@ while count < 6 do
     max_size = game[:home][:players][count][:shoe]
     binding.pry
     result = game[:home][:players][count][:rebounds] 
+    binding.pry
   end
   if game[:away][:players][count][:shoe] > max_size
     max_size = game[:away][:players][count][:shoe]
